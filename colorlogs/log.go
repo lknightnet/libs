@@ -38,8 +38,16 @@ func GreenLog(v ...interface{}) {
 	log.Println(fmt.Sprintf("\033[32m%s\033[0m", v))
 }
 
+func GreenFmtLog(v ...interface{}) {
+	fmt.Println(fmt.Sprintf("\033[32m%s\033[0m", v))
+}
+
 func RedLog(v ...interface{}) {
 	log.Println(fmt.Sprintf("\033[31m%s\033[0m", v))
+}
+
+func RedFmtLog(v ...interface{}) {
+	fmt.Println(fmt.Sprintf("\033[31m%s\033[0m", v))
 }
 
 const (
